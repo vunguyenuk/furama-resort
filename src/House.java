@@ -1,5 +1,18 @@
 public class House {
-    public static int number;
-    public static int bed = 4;
-    public static double price;
+    public int number;
+    public int bed;
+    public double price;
+
+    public House(int bed) {
+        this.bed = bed;
+    }
+
+    public int getBed() {
+        return bed;
+    }
+
+    public void setBed(int bed) {
+        this.bed = bed;
+    }
+
 }

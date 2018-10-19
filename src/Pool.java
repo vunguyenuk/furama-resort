@@ -1,6 +1,15 @@
 public class Pool {
-    public static double price;
+    public double price;
 
-    public Pool() {
+    public Pool(double price) {
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
