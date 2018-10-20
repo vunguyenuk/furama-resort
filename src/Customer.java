@@ -1,10 +1,19 @@
 public class Customer {
-    public String name;
-    public int age;
+    private String name;
+    private int age;
+    private int money;
 
     public Customer(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 
     public String getName() {

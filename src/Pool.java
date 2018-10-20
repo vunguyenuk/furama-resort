@@ -1,15 +1,17 @@
 public class Pool {
-    public double price;
+    private int openingTime;
 
-    public Pool(double price) {
-        this.price = price;
+    public Pool(int openingTime) {
+        this.openingTime = openingTime;
     }
 
-    public double getPrice() {
-        return price;
+    public int getOpeningTime() {
+        return openingTime;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setOpeningTime(int openingTime) {
+        this.openingTime = openingTime;
     }
+
+
 }

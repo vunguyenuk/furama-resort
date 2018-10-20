@@ -1,3 +1,4 @@
 public interface Bill {
-    void calCulator();
+    void calPriceRentVilla(int numberOfDay);
+
 }

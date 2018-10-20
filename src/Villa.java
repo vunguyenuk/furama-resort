@@ -1,11 +1,10 @@
 import java.util.Date;
 
 public class Villa {
-    public double price;
-    public int bed;
-    Date date;
+    private double price = 10;
+    private int bed;
 
-    public Villa(double price, int bed, Date date) {
+    public Villa(double price, int bed) {
         this.price = price;
         this.bed = bed;
     }
@@ -24,5 +23,13 @@ public class Villa {
 
     public void setBed(int bed) {
         this.bed = bed;
+    }
+
+    @Override
+    public String toString() {
+        return "price :"
+                + price
+                + " \tquantity bed:  "
+                + bed;
     }
 }

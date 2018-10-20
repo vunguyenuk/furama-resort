@@ -1,11 +1,11 @@
 public class House {
-    public int number;
-    public int bed;
-    public double price;
+    private int bed;
 
     public House(int bed) {
         this.bed = bed;
     }
+
+
 
     public int getBed() {
         return bed;
@@ -15,4 +15,8 @@ public class House {
         this.bed = bed;
     }
 
+    @Override
+    public String toString() {
+        return "bed: " + bed;
+    }
 }
