@@ -36,7 +36,7 @@ public class Customer {
     public String toString() {
         return "name :"
                 + name
-                + "\n age:  "
+                + "\t age:  "
                 + age;
     }
 }

@@ -1,13 +1,16 @@
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Furama implements Bill{
     Villa[] villas;
     House[] houses;
     Pool[] pools;
+    Customer[] customers;
     int villaQuantity, houseQuantity, poolQuantity;
 
     public Furama(int villaQuantity, int houseQuantity, int poolQuantity){
@@ -121,6 +124,21 @@ public class Furama implements Bill{
                     System.out.println("Số tiền không được thống kê!");
                     break;
         }
+    }
+
+    public void addCustomer(){
+        Scanner input = new Scanner(System.in);
+        ArrayList<Customer> customers = new ArrayList <>(5);
+        for(int i = 1 ; i < 5; i++){
+            System.out.print("Enter name's customer " + i + ": " );
+            String names = input.nextLine();
+            customers.add(new Customer(names,20));
+        }
+        System.out.println("\n----------------------");
+        for(Customer customer: customers){
+            System.out.println(customer.toString());
+        }
+
     }
 
 }
