@@ -1,20 +1,12 @@
 import java.util.Date;
 
-public class Villa {
-    private double price = 10;
+public class Villa extends Accomodation {
+
     private int bed;
 
-    public Villa(double price, int bed) {
-        this.price = price;
+    public Villa(int bed, String name, int size, double price) {
+        super(name, size, price);
         this.bed = bed;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public int getBed() {
@@ -27,9 +19,13 @@ public class Villa {
 
     @Override
     public String toString() {
-        return "price :"
-                + price
-                + " \tquantity bed:  "
+        return  "name: "
+                + super.getName()
+                + "\tsize"
+                + super.getSize()
+                + "\tprice :"
+                + super.getPrice()
+                + "\tbed:  "
                 + bed;
     }
 }

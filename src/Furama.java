@@ -22,28 +22,28 @@ public class Furama implements Bill{
 
     public void addVilla(){
         for(int i = 0; i < villas.length; i++){
-            villas[i] = new Villa(10.0,1);
+            villas[i] = new Villa(1,"villa", 25,10.0);
         }
     }
 
     public void showVilla(){
         for(int i = 0; i < villas.length; i++){
-            System.out.println("Show villa thu " + i + " la : " + villas[i].toString());
+            System.out.println("Show "+ villas[i].getName() + " thu " + i + " la : " + villas[i].toString());
         }
-        System.out.println("Tổng số villa la:" + villas.length);
+        System.out.println("Tổng số villa la: " + villas.length);
     }
 
     public void addHouse(){
         for(int i = 0; i < houses.length; i++){
-            houses[i] = new House(1);
+            houses[i] = new House(1, "house", 45,10.0);
         }
     }
 
     public void showHouse(){
         for(int i = 0; i < houses.length; i++){
-            System.out.println("Show house thu " + i + " la : " + houses[i].toString());
+            System.out.println("Show " + houses[i].getName() +" thu " + i + " la : " + houses[i].toString());
         }
-        System.out.println("Tổng số house la:" + houses.length);
+        System.out.println("Tổng số house la: " + houses.length);
     }
 
     public void addPool(){
@@ -118,7 +118,7 @@ public class Furama implements Bill{
                 break;
 
                 default:
-                    System.out.println("Bạn không đủ tiền để ở khách sạn!");
+                    System.out.println("Số tiền không được thống kê!");
                     break;
         }
     }

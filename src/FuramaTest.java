@@ -54,11 +54,9 @@ public class FuramaTest {
 
 
         System.out.println("\n--------------Day 2-------------------");
-        System.out.println("");
-        System.out.println("Show tổng các villa: ");
         furama.showVilla();
 
-        System.out.println("Show tổng các house: ");
+        System.out.println("\n");
         furama.showHouse();
         System.out.println("----------------------------------------");
 
