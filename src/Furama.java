@@ -62,7 +62,6 @@ public class Furama implements Bill{
     }
 
 
-    @Override
     public void calPriceRentVilla(int numberOfDay) {
 
         DecimalFormat formatter = new DecimalFormat("$##.00");
@@ -140,5 +139,7 @@ public class Furama implements Bill{
         }
 
     }
+
+
 
 }
